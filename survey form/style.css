@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body::before {
+  font-family: "Open Sans", sans-serif;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  font-family: "Open Sans", sans-serif;
+  max-width: 50%;
+  margin: auto;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+header {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+#survey-form {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 2rem;
+
+  background-color: RGB(41, 41, 71);
+}
+.form-content {
+  display: block;
+  width: 100%;
+  padding-bottom: 15px;
+  color: white;
+}
+.form-content > input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+button {
+  width: 90%;
+  height: 2rem;
+  border-radius: 5px;
+  margin-left: 21px;
+}
+.form-content > select {
+  width: 91.25%;
+}
+.form-content > label,
+input[type="radio"],
+input[type="checkbox"],
+textarea {
+  margin-left: 21px;
+  /* padding: 3px; */
+}
+textarea {
+  width: 90%;
+}
+button {
+  background-color: #37af65;
+  color: white;
+  outline: none;
+  border: none;
+}
+@media screen and (min: 601px) {
+    div{
+      font-size: 30px;
+    }
+  }
